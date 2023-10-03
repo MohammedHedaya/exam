@@ -1,4 +1,5 @@
 import 'package:exam/screen2.dart';
+import 'package:exam/screen3.dart';
 import 'package:flutter/material.dart';
 
 class BottonNavigator extends StatefulWidget {
@@ -13,6 +14,7 @@ class _BottonNavigatorState extends State<BottonNavigator> {
 
   final List<Widget> pages = [
     Screen2(),
+    Screen3(),
   ];
 
   @override
@@ -33,8 +35,13 @@ class _BottonNavigatorState extends State<BottonNavigator> {
       },
       items: [
         BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-        BottomNavigationBarItem(icon: Icon(Icons.add), label: 'Go 2'),
-        BottomNavigationBarItem(icon: Icon(Icons.dashboard), label: 'DashBoard'),
+        BottomNavigationBarItem(
+            icon: Image.asset('assets/images/grid-01.png'),
+            label: 'Grid'),
+        //here i am create this as a navigator to go second screen....
+        BottomNavigationBarItem(
+            icon: Image.asset('assets/images/calendar.png'),
+            label: 'Calender'),
         BottomNavigationBarItem(icon: Icon(Icons.person), label: 'Person'),
       ],
     );

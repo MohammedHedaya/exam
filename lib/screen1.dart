@@ -39,12 +39,6 @@ class _Screen1State extends State<Screen1> {
             ),
           ],
         ),
-        bottom: PreferredSize(
-          preferredSize: Size.fromHeight(30.0),
-          child: Padding(
-            padding: const EdgeInsets.all(8.0),
-          ),
-        ),
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
